@@ -1,0 +1,19 @@
+# Cargo build output
+/target/
+debug/
+ 
+# rustfmt backup files
+**/*.rs.bk
+ 
+# MSVC debug info (harmless to keep even on macOS)
+*.pdb
+ 
+# macOS
+.DS_Store
+ 
+# Editors
+.idea/
+.vscode/
+*.swp
+ 
+ data/

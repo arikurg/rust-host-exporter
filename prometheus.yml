@@ -1,0 +1,11 @@
+# Minimal Prometheus config that scrapes the host-exporter.
+# Run with: prometheus --config.file=prometheus.yml
+# Then open http://localhost:9090 to query.
+ 
+global:
+  scrape_interval: 15s
+ 
+scrape_configs:
+  - job_name: "host-exporter"
+    static_configs:
+      - targets: ["localhost:9100"]
